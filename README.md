@@ -1,6 +1,10 @@
 # Spider Anatomy Pipeline
 
-This repository contains the computational pipeline implementing the spider atlas creation process.
+This repository contains the computational pipeline implementing the spider atlas creation process, as published in:
+
+Artiushin Gregory, Corver Abel, Gordus Andrew (2025) A three-dimensional immunofluorescence atlas of the brain of the hackled-orb weaver spider, Uloborus diversus eLife 14:RP107732
+
+https://doi.org/10.7554/eLife.107732.2
 
 ### Data organization
 
@@ -238,3 +242,4 @@ The *[PERTURBATION]* substring contains 12 floating point numbers which make up 
 ## Post-alignment verification
 
 For every alignment that completes, an alignment score will be computed between the specified reference volume and the moving image transformed according to the transformation state at the given iteration. This alignment metric will be computed every 5,000 iterations, as well as for the final iteration. This allows inspection of convergence as well as alignment quality rankings between repeated sample pairings. The alignment metric is currently computed according to the mutual information between both image stacks.
+
